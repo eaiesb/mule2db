@@ -54,6 +54,30 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				          <groupId>org.mule.tools.maven</groupId>
+				          <artifactId>mule-maven-plugin</artifactId>
+				          <version>2.2.1</version>
+				          <configuration>
+			          	<deploymentType>cloudhub</deploymentType>
+				  	<muleVersion>3.9.4</muleVersion> 
+				  	<username>EaiesbDec2019</username> 
+				  	<password>Eaiesb@123</password> 
+				  	<applicationName>mule2db</applicationName>
+               			  	<environment>Sandbox</environment> 
+				  	<uri>https://anypoint.mulesoft.com</uri>
+			          	<workerType>Micro</workerType>
+	      			  </configuration>
+			           <executions>
+  			             <execution>
+					     <id>deploy</id>
+				                <phase>deploy</phase>
+				                <goals>
+				                   <goal>deploy</goal>
+				                </goals>
+				             </execution>
+				           </executions>
+                         </plugin>
 		</plugins>
 	</build>
 
