@@ -24,7 +24,19 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <copyToAppsDirectory>true</copyToAppsDirectory>
+                                <armDeployment>
+                                    <muleVersion>3.9.0</muleVersion>
+                                    <uri>https://anypoint.mulesoft.com</uri>
+                                    <target>dev-hybrid-server</target>
+                                    <targetType>server</targetType>
+                                    <username>EaiesbFeb20</username>
+                                    <password>Eaiesb@123</password>
+                                    <applicationName>mule2db-dev</applicationName>
+                                    <environment>DEV</environment>
+                                    <properties>
+                                      <env>DEV</env>
+                                    </properties>
+                                </armDeployment>				
                 </configuration>
 			</plugin>
 			<plugin>
