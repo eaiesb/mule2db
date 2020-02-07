@@ -24,8 +24,17 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <copyToAppsDirectory>true</copyToAppsDirectory>
-                </configuration>
+                                <armDeployment>
+                                    <muleVersion>3.9.0</muleVersion>
+                                    <uri>https://anypoint.mulesoft.com</uri>
+                                    <target>stage-hybrid-server</target>
+                                    <targetType>server</targetType>
+                                    <username>EaiesbFeb20</username>
+                                    <password>Eaiesb@123</password>
+                                    <applicationName>mule2db-stage</applicationName>
+                                    <environment>STAGE</environment>
+                                </armDeployment>
+                                </configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
